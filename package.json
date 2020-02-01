@@ -1,6 +1,6 @@
 {
   "name": "react-hd-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component for serving high resolution images depends on display.",
   "main": "dist/index.js",
   "scripts": {
