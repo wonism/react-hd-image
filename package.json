@@ -36,7 +36,7 @@
   "bugs": {
     "url": "https://github.com/wonism/react-hd-image/issues"
   },
-  "homepage": "https://wonism.github.io/open-sources/react-hd-image",
+  "homepage": "https://github.com/wonism/react-hd-image",
   "peerDependencies": {
     "react": ">=15.3.0",
     "react-dom": ">=15.3.0"
