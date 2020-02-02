@@ -19,6 +19,10 @@ $ npm i react-hd-image -S
 $ yarn add react-hd-image -S
 ```
 
+## Example
+
+https://wonism.github.io/react-hd-image
+
 ## Usage
 
 __Properties__

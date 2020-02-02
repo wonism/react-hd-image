@@ -13,6 +13,7 @@
     "lint": "eslint -c .eslintrc.js --fix './src/**/*.ts{,x}'",
     "prepare": "npm run build",
     "precommit": "npm run lint && npm t && npm run test:badges",
+    "docs": "NODE_ENV=production npm start && push-dir --dir=demo --branch=gh-pages",
     "semantic-release": "semantic-release"
   },
   "keywords": [
@@ -82,6 +83,7 @@
     "jsdom": "^16.0.1",
     "mkdirp": "^1.0.3",
     "prettier-eslint-cli": "^5.0.0",
+    "push-dir": "^0.4.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "rimraf": "^3.0.1",
