@@ -26,6 +26,3 @@ coverage/*
 
 .tmp
 .sass-cache
-
-# build
-demo/bundle.js

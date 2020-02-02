@@ -13,6 +13,7 @@
     "lint": "eslint -c .eslintrc.js --fix './src/**/*.ts{,x}'",
     "prepare": "npm run build",
     "precommit": "npm run lint && npm t && npm run test:badges",
+    "docs": "NODE_ENV=production npm start && push-dir --dir=demo --branch=gh-pages",
     "semantic-release": "semantic-release"
   },
   "keywords": [
@@ -50,6 +51,7 @@
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
     "@babel/preset-typescript": "^7.8.3",
+    "@semantic-release/exec": "^5.0.0",
     "@semantic-release/git": "^9.0.0",
     "@types/enzyme": "^3.10.4",
     "@types/enzyme-adapter-react-16": "^1.0.5",
@@ -82,6 +84,7 @@
     "jsdom": "^16.0.1",
     "mkdirp": "^1.0.3",
     "prettier-eslint-cli": "^5.0.0",
+    "push-dir": "^0.4.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "rimraf": "^3.0.1",
