@@ -76,7 +76,7 @@ module.exports = {
       jsx: true,
     },
     jsx: true,
-    project: './tsconfig.json',
+    project: './tsconfig.dev.json',
     sourceType: 'module',
     tsconfigRootDir: '.',
     useJSXTextNode: true,

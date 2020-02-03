@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { render } from 'react-dom';
 import { createGlobalStyle } from 'styled-components';
 
@@ -6,13 +6,6 @@ import HDImage from '../src';
 import { isRetinaHd, isRetina } from '../src/utils';
 
 const appRoot = document.getElementById('root');
-
-const displayTypeMap: Record<number, string> = {
-  [-1]: 'being checked...',
-  [1]: 'Normal Display',
-  [2]: 'Retina Display',
-  [3]: 'HD Display',
-};
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -112,7 +105,6 @@ const GlobalStyle = createGlobalStyle`
 
 const App = () => {
   const [ratio, setRatio] = useState<number>(-1);
-  const displayType = useMemo(() => displayTypeMap[ratio], [ratio]);
 
   useEffect(() => {
     if (isRetinaHd()) {
@@ -129,7 +121,7 @@ const App = () => {
       <GlobalStyle />
 
       <h1>
-        {`React HD Image example page. (Your display type is ${displayType})`}
+        {`React HD Image example page. (Your display renders @${ratio}x image.)`}
       </h1>
 
       <div>
